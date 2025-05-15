@@ -1,6 +1,21 @@
-# GorillaUnityTools
-a unitypackage that includes a boatload of modules/stuff for your gorilla tag copy
+# ⭐ WHAT IT IS
+**Gorilla Unity Tools Aka GorillaToolBox is a unity package for any gorilla tag copy made in unity**
+**All u have to do is import teh ackage and you should see "GorillaToolBox" on your topbar also before doing anything please check ur console for any errors**
+**If you have errors this is likly due to something u d**
 
-i am not responsible if your project breaks thru out most of the code there is multiple warnings
 
-# NONE OF THE CODE HAS ANY UNKOWN WEBHOOKS OR IMPORTS ANY THING THAT U WILL NOT BE NOTIFIED FOR
+# 🚀 SOME FEATURES
+
+- REMESH (Unmesh Higher versions): you can unmesh any version mainly for high versions with mesh bakers
+- UNMESH WARDROBE SMART: you can unmesh your entire wardrobe with one click (sources from a object list)
+- UNMESH WARDROBE DUMB (RISKY): you can unmesh your entire wardrobe with one click (sources from vrRig)
+- UPDATE HEADMODELS: ADDS ALL COSMETICS TO EVERY HEADMODEL (saves time)
+- UPDATE VRRIG: ADDS SELECTED COSMETICS TO THE SELECTED VR RIG
+- UPDATE STANDS: ADDS ALL COSMETICSTANDS TO THE COSMETICS CONTROLLER (saves time)
+
+# ❗ INFO
+
+**NONE OF ANY OF THE CODE WILL SEND SECRET INFO TO ANY WEBHOOK OR ANYTHING OUTSIDE OF YOUR CONSENT**
+**DONT BELIVE ME?, ALL THE CODE IS OPENSOURCED IN THE PACKAGE**
+
+discord.gg/zenunity for the package
