@@ -1,7 +1,7 @@
 # ⭐ WHAT IT IS
 **Gorilla Unity Tools Aka GorillaToolBox is a unity package for any gorilla tag copy made in unity**
 **All u have to do is import teh ackage and you should see "GorillaToolBox" on your topbar also before doing anything please check ur console for any errors**
-**If you have errors this is likly due to something u d**
+**If you have errors this is likly due to something u did**
 
 
 # 🚀 SOME FEATURES
