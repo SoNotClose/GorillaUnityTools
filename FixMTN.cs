@@ -3,21 +3,12 @@ using System.Reflection;
 
 public class FixMTN : MonoBehaviour
 {
-    // by @sonotclose /zenunity
-    // if this doesnt work better tutorial in GorillaUnityTools
-    private const bool Fix = true;
-    public bool patched;
-    public string output = "null";
-
-    void Start()
-    {
-        output = "Awaiting Join Server";
-        patched = false;
-    }
+    public GameObject PhotonManager;
+    private bool fixApplied = false;
 
     void Update()
     {
-        if (Fix && GorillaGameManager.instance != null)
+        if (!fixApplied && GorillaGameManager.instance != null)
         {
             System.Type managerType = typeof(GorillaGameManager);
             object target = GorillaGameManager.instance;
@@ -27,9 +18,13 @@ public class FixMTN : MonoBehaviour
             SetPrivateField(managerType, target, "checkInterval", 99999999f);
             SetPrivateField(managerType, target, "isFileTrue", false);
 
-            Debug.Log("MTN patched successfully. by @sonotclose");
-            output = "Patched ^_^";
-            patched = true;
+            Debug.Log("FixMTN: Fields patched once.");
+            fixApplied = true;
+        }
+
+        if (PhotonManager != null && !PhotonManager.scene.IsValid())
+        {
+            DontDestroyOnLoad(PhotonManager); // an extra layer of protect i guesss even though i think it starts therep
         }
     }
 
@@ -42,9 +37,12 @@ public class FixMTN : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning($"field '{fieldName}' not found.");
-            output = "ur mtn isnt broken";
-            patched = false;
+            Debug.LogWarning($"FixMTN: Field '{fieldName}' not found.");
         }
+    }
+
+    void OnDestroy()
+    {
+        Debug.LogWarning("FixMTN: This script was cooked somehow");
     }
 }
